@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Quiz_e">
+
+        <TextView
+            android:id="@+id/qetv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#09518A"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Cyber Security"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/qetv2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qetv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/qe1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qetv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.1/ Which of the following should you do to restrict access to your files and devices??"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rge1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qe1">
+
+            <RadioButton
+                android:id="@+id/rbe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Update your software once a year" />
+
+            <RadioButton
+                android:id="@+id/rbe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Share passwords only with colleagues you trust." />
+
+            <RadioButton
+                android:id="@+id/rbe3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Have your staff members access information via an open Wi-Fi network." />
+
+            <RadioButton
+                android:id="@+id/rbe4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Use multi-factor authentication." />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cae1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rge1"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/qe2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cae1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.2/ Which is the best answer for which people in a business should be responsible for cybersecurity?
+"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rge2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qe2">
+
+            <RadioButton
+                android:id="@+id/rbe5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Business owners. They run the business, so they need to know cybersecurity basics and put them in practice to reduce the risk of cyber attacks."/>
+
+            <RadioButton
+                android:id="@+id/rbe6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="IT specialists, because they are in the best position to know about and promote cybersecurity within a business."/>
+
+            <RadioButton
+                android:id="@+id/rbe7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Managers, because they are responsible for making sure that staff members are following the right practices."/>
+
+            <RadioButton
+                android:id="@+id/rbe8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="All staff members should know some cybersecurity basics to reduce the risk of cyber attacks."/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cae2"
+            android:layout_below="@+id/rge2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qe3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cae2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.3/ Which of the following is the best answer for how to secure your router?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rge3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qe3">
+
+            <RadioButton
+                android:id="@+id/rbe9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Change the default name and password of the router."/>
+
+            <RadioButton
+                android:id="@+id/rbe10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Turn off the router’s remote management."/>
+
+            <RadioButton
+                android:id="@+id/rbe11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Log out as the administrator once the router is set up."/>
+
+            <RadioButton
+                android:id="@+id/rbe12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="All of the above."/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cae3"
+            android:layout_below="@+id/rge3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qe4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cae3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.4/ Which of these best describes how criminals start ransomware attacks?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rge4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qe4">
+
+            <RadioButton
+                android:id="@+id/rbe13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Sending a scam email with links or attachments that put your data and network at risk."/>
+
+            <RadioButton
+                android:id="@+id/rbe14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Getting into your server through vulnerabilities and installing malware."/>
+
+            <RadioButton
+                android:id="@+id/rbe15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Using infected websites that automatically download malicious software to your computer or mobile device."/>
+
+            <RadioButton
+                android:id="@+id/rbe16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="All of the above."/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cae4"
+            android:layout_below="@+id/rge4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qe5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cae4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.5/ Which one of these statements is true?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rge5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qe5">
+
+            <RadioButton
+                android:id="@+id/rbe17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="It’s best to use multi-factor authentication to access areas of the business network with sensitive information."/>
+
+            <RadioButton
+                android:id="@+id/rbe18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="You should use the same password for key business devices to guarantee that high-level employees can access them in an emergency."/>
+
+            <RadioButton
+                android:id="@+id/rbe19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="The best way to protect business data is to make sure no one loses any device."/>
+
+            <RadioButton
+                android:id="@+id/rbe20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="You shouldn’t limit login attempts on key business devices."/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cae5"
+            android:layout_below="@+id/rge5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btne5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FAF6F6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/cae5"/>
+
+        <TextView
+            android:hint="Score"
+            android:id="@+id/tve3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#09518A"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btne5" />
+
+    </RelativeLayout>
+</ScrollView>

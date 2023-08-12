@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Quiz_d">
+
+        <TextView
+            android:id="@+id/qdtv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#09518A"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Internet Of Things"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/qdtv2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qdtv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/qd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qdtv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.1/ What is IoT?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qd1">
+
+            <RadioButton
+                android:id="@+id/rbd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="network of physical objects embedded with sensors" />
+
+            <RadioButton
+                android:id="@+id/rbd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="network of virtual objects" />
+
+            <RadioButton
+                android:id="@+id/rbd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="network of objects in the ring structure" />
+
+            <RadioButton
+                android:id="@+id/rbd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="network of sensors" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cad1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgd1"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/qd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cad1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.2/ Who coined the term Internet of Things?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qd2">
+
+            <RadioButton
+                android:id="@+id/rbd5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Kevin Aston"/>
+
+            <RadioButton
+                android:id="@+id/rbd6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="John Wright"/>
+
+            <RadioButton
+                android:id="@+id/rbd7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Edward Jameson"/>
+
+            <RadioButton
+                android:id="@+id/rbd8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="George Garton"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cad2"
+            android:layout_below="@+id/rgd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cad2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.3/ When was the actual term Internet of Things coined?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qd3">
+
+            <RadioButton
+                android:id="@+id/rbd9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="1999"/>
+
+            <RadioButton
+                android:id="@+id/rbd10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="1997"/>
+
+            <RadioButton
+                android:id="@+id/rbd11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="2002"/>
+
+            <RadioButton
+                android:id="@+id/rbd12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="2000"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cad3"
+            android:layout_below="@+id/rgd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cad3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.4/ Which is not an IoT device?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qd4">
+
+            <RadioButton
+                android:id="@+id/rbd13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Table"/>
+
+            <RadioButton
+                android:id="@+id/rbd14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Laptop"/>
+
+            <RadioButton
+                android:id="@+id/rbd15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Arduino"/>
+
+            <RadioButton
+                android:id="@+id/rbd16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Tablet"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cad4"
+            android:layout_below="@+id/rgd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cad4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.5/  Which is false about IoT devices?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qd5">
+
+            <RadioButton
+                android:id="@+id/rbd17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="IoT devices use the internet for collecting and sharing data"/>
+
+            <RadioButton
+                android:id="@+id/rbd18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="IoT devices need microcontrollers"/>
+
+            <RadioButton
+                android:id="@+id/rbd19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="IoT devices use wireless technology"/>
+
+            <RadioButton
+                android:id="@+id/rbd20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="IoT devices are completely safe"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cad5"
+            android:layout_below="@+id/rgd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnd5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FAF6F6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/cad5"/>
+
+        <TextView
+            android:hint="Score"
+            android:id="@+id/tvd3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#09518A"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnd5" />
+
+    </RelativeLayout>
+</ScrollView>

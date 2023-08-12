@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Quiz_c">
+
+        <TextView
+            android:id="@+id/qctv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#09518A"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Database Management System"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/qctv2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qctv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/qc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qctv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.1/ Consider a hard disk with a sector size of 512 bytes, and 50 sectors per track. A block may be of several KBs in size. Which of the following is the valid block size?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qc1">
+
+            <RadioButton
+                android:id="@+id/rbc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="256 bytes" />
+
+            <RadioButton
+                android:id="@+id/rbc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="786 bytes" />
+
+            <RadioButton
+                android:id="@+id/rbc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="4096 bytes" />
+
+            <RadioButton
+                android:id="@+id/rbc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="26112 bytes" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cac1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgc1"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/qc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cac1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.2/ Consider a disk with following characteristics; Block size 512 bytes, number of blocks per track 25 and number of tracks per surface 500. Also assume that there is a table EMPLOYEE with 10000 fixed length records and each record is of size 101 bytes. Which of the following is the correct bfr (blocking factor) and number of blocks combination if we assume an unspanned organization?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qc2">
+
+            <RadioButton
+                android:id="@+id/rbc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="5 and 2000"/>
+
+            <RadioButton
+                android:id="@+id/rbc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="5 and 1000"/>
+
+            <RadioButton
+                android:id="@+id/rbc7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="6 and 2000"/>
+
+            <RadioButton
+                android:id="@+id/rbc8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="6 and 1000"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cac2"
+            android:layout_below="@+id/rgc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cac2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.3/ Consider a disk with a sector size of 512 bytes, 14409 tracks per surface, 16947 sectors per track, 8 double-sided platters, and an average seek time of 9 ms. Which of the following is the correct combination of capacity of track, capacity of each surface, and capacity of disk (approximately)?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qc3">
+
+            <RadioButton
+                android:id="@+id/rbc9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="100 MB, 200 GB, and 2 TB"/>
+
+            <RadioButton
+                android:id="@+id/rbc10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="8 MB, 116 GB and 2 TB"/>
+
+            <RadioButton
+                android:id="@+id/rbc11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="8 MB, 200 GB and 1 TB"/>
+
+            <RadioButton
+                android:id="@+id/rbc12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="80 MB, 116 GB and 1 TB"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cac3"
+            android:layout_below="@+id/rgc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cac3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.4/ Suppose we have a database file of 10,000 records, each record is of size 100 bytes. If the disk blocks are 512 bytes long, block addresses are 4 bytes long (i.e., to specify address to a block requires 4 bytes), pointers to records are 4 bytes long (i.e., a pointer which specifies address of the record in the block needs 5 bytes), and the records are sorted in search key order, what would be the number of disk accesses to do a successful lookup for a record?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qc4">
+
+            <RadioButton
+                android:id="@+id/rbc13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="11"/>
+
+            <RadioButton
+                android:id="@+id/rbc14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="5"/>
+
+            <RadioButton
+                android:id="@+id/rbc15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="100"/>
+
+            <RadioButton
+                android:id="@+id/rbc16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="256"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cac4"
+            android:layout_below="@+id/rgc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cac4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.5/  Consider a disk with the following specifications: 512 bytes sector size, 8 double sided platters (2 surfaces per platter), 5000 tracks per surface, 100 sectors per track, average seek time of 10 msec, and the disk rotates at 5400 revolutions per minute (rpm). Which of the following is the correct combination of number of cylinders, average rotational delay, and transfer rate (if an entire track of data can be transferred per revolution of disk)?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qc5">
+
+            <RadioButton
+                android:id="@+id/rbc17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="5000 cylinders, 5.55 milliseconds, 4.5 KB"/>
+
+            <RadioButton
+                android:id="@+id/rbc18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="5000 cylinders, 4.5 milliseconds, 12 KB"/>
+
+            <RadioButton
+                android:id="@+id/rbc19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="4000 cylinders, 5.55 milliseconds, 10 KB"/>
+
+            <RadioButton
+                android:id="@+id/rbc20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="4000 cylinders, 2 milliseconds, 2.5 KB"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cac5"
+            android:layout_below="@+id/rgc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnc5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FAF6F6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/cac5"/>
+
+        <TextView
+            android:hint="Score"
+            android:id="@+id/tvc3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#09518A"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnc5" />
+
+    </RelativeLayout>
+</ScrollView>

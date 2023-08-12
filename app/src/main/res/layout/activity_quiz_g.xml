@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Quiz_g">
+
+        <TextView
+            android:id="@+id/qgtv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#09518A"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Web Development"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/qgtv2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qgtv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/qg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qgtv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.1/ What does HTML stand for?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qg1">
+
+            <RadioButton
+                android:id="@+id/rbg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Hyperlinks and Text Markup Language" />
+
+            <RadioButton
+                android:id="@+id/rbg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Hyper Text Markup Language" />
+
+            <RadioButton
+                android:id="@+id/rbg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Home Tool Markup Language" />
+
+            <RadioButton
+                android:id="@+id/rbg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="None of these" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cag1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgg1"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/qg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cag1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.2/ Choose the correct HTML tag for the largest heading"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qg2">
+
+            <RadioButton
+                android:id="@+id/rbg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="heading"/>
+
+            <RadioButton
+                android:id="@+id/rbg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="h6"/>
+
+            <RadioButton
+                android:id="@+id/rbg7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="head"/>
+
+            <RadioButton
+                android:id="@+id/rbg8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="h1"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cag2"
+            android:layout_below="@+id/rgg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cag2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.3/ What is the correct HTML tag for inserting a line break?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qg3">
+
+            <RadioButton
+                android:id="@+id/rbg9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="br"/>
+
+            <RadioButton
+                android:id="@+id/rbg10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="lb"/>
+
+            <RadioButton
+                android:id="@+id/rbg11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="break"/>
+
+            <RadioButton
+                android:id="@+id/rbg12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="None of these"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cag3"
+            android:layout_below="@+id/rgg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cag3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.4/ Which of these tags are all table tags?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qg4">
+
+            <RadioButton
+                android:id="@+id/rbg13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="table,head,tfoot"/>
+
+            <RadioButton
+                android:id="@+id/rbg14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="table,tr,td"/>
+
+            <RadioButton
+                android:id="@+id/rbg15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="thead,body,tr"/>
+
+            <RadioButton
+                android:id="@+id/rbg16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="table,tr,tt"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cag4"
+            android:layout_below="@+id/rgg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cag4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.5/ How can you make a numbered list?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qg5">
+
+            <RadioButton
+                android:id="@+id/rbg17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="ol"/>
+
+            <RadioButton
+                android:id="@+id/rbg18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="ul"/>
+
+            <RadioButton
+                android:id="@+id/rbg19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="dl"/>
+
+            <RadioButton
+                android:id="@+id/rbg20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="list"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cag5"
+            android:layout_below="@+id/rgg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btng5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FAF6F6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/cag5"/>
+
+        <TextView
+            android:hint="Score"
+            android:id="@+id/tvg3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#09518A"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btng5" />
+
+    </RelativeLayout>
+</ScrollView>

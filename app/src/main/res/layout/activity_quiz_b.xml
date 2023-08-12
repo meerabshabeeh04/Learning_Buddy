@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Quiz_b">
+
+        <TextView
+            android:id="@+id/qbtv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#09518A"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Machine Learning"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/qbtv2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qbtv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/qb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qbtv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.1/ High entropy means that the partitions in classification are"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qb1">
+
+            <RadioButton
+                android:id="@+id/rbb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="pure" />
+
+            <RadioButton
+                android:id="@+id/rbb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Not pure" />
+
+            <RadioButton
+                android:id="@+id/rbb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="useful" />
+
+            <RadioButton
+                android:id="@+id/rbb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Useless" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgb1"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/qb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cab1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.2/ A machine learning problem involves four attributes plus a class.The attributes have 3, 2, 2, and 2 possible values each.The class has 3 possible values. How many maximum possible different examples are there?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qb2">
+
+            <RadioButton
+                android:id="@+id/rbb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="12"/>
+
+            <RadioButton
+                android:id="@+id/rbb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="24"/>
+
+            <RadioButton
+                android:id="@+id/rbb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="48"/>
+
+            <RadioButton
+                android:id="@+id/rbb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="72"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cab2"
+            android:layout_below="@+id/rgb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cab2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.3/ Which of the following is NOT supervised learning?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qb3">
+
+            <RadioButton
+                android:id="@+id/rbb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="PCA"/>
+
+            <RadioButton
+                android:id="@+id/rbb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Decision Tree"/>
+
+            <RadioButton
+                android:id="@+id/rbb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Linear Regression"/>
+
+            <RadioButton
+                android:id="@+id/rbb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Naive Bayesian"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cab3"
+            android:layout_below="@+id/rgb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cab3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.4/ Which of the following statements about Naive Bayes is incorrect?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qb4">
+
+            <RadioButton
+                android:id="@+id/rbb13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Attributes are equally important."/>
+
+            <RadioButton
+                android:id="@+id/rbb14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Attributes are statistically dependent of one another given the class value."/>
+
+            <RadioButton
+                android:id="@+id/rbb15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Attributes can be nominal or numeric"/>
+
+            <RadioButton
+                android:id="@+id/rbb16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Attributes are statistically independent of one another given the class value."/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cab4"
+            android:layout_below="@+id/rgb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cab4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.5/ Suppose we would like to perform clustering on spatial data such as thegeometrical locations of houses. We wish to produce clusters of many different sizes and shapes.Which of the following methods is the most appropriate?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qb5">
+
+            <RadioButton
+                android:id="@+id/rbb17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Decision Trees"/>
+
+            <RadioButton
+                android:id="@+id/rbb18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="K-means clustering"/>
+
+            <RadioButton
+                android:id="@+id/rbb19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Model-based clustering"/>
+
+            <RadioButton
+                android:id="@+id/rbb20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Density-based clustering"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/cab5"
+            android:layout_below="@+id/rgb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnb5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FAF6F6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/cab5"/>
+
+        <TextView
+            android:hint="Score"
+            android:id="@+id/tvb3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#09518A"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnb5" />
+
+    </RelativeLayout>
+</ScrollView>

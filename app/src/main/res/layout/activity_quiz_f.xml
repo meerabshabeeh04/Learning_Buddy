@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Quiz_f">
+
+        <TextView
+            android:id="@+id/qftv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#09518A"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Game Development"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/qftv2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qftv1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/qf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qftv2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.1/ _____ defines a space within a game, a virtual world for the player to explore within the gameplay created for them.Question options:?"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qf1">
+
+            <RadioButton
+                android:id="@+id/rbf1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="A stage" />
+
+            <RadioButton
+                android:id="@+id/rbf2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="A scenario" />
+
+            <RadioButton
+                android:id="@+id/rbf3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="A game level" />
+
+            <RadioButton
+                android:id="@+id/rbf4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="all of the above" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/caf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgf1"
+            android:textColor="#4CAF50" />
+
+        <TextView
+            android:id="@+id/qf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caf1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.2/ ___________are things like scripts, colliders, materials, etc. that are attached to a basic game object to add some behavior or quality to it."
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qf2">
+
+            <RadioButton
+                android:id="@+id/rbf5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Traits"/>
+
+            <RadioButton
+                android:id="@+id/rbf6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Assets"/>
+
+            <RadioButton
+                android:id="@+id/rbf7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Elements"/>
+
+            <RadioButton
+                android:id="@+id/rbf8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Components"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/caf2"
+            android:layout_below="@+id/rgf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qf3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caf2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.3/ The display of all of the properties for an active object is the:"
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgf3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qf3">
+
+            <RadioButton
+                android:id="@+id/rbf9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="inspector"/>
+
+            <RadioButton
+                android:id="@+id/rbf10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="project View"/>
+
+            <RadioButton
+                android:id="@+id/rbf11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="hierarchy"/>
+
+            <RadioButton
+                android:id="@+id/rbf12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="scene Editor"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/caf3"
+            android:layout_below="@+id/rgf3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qf4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caf3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.4/ A complete screen, or the set of all the lements representing it."
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgf4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qf4">
+
+            <RadioButton
+                android:id="@+id/rbf13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="MIDI"/>
+
+            <RadioButton
+                android:id="@+id/rbf14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Storyboard"/>
+
+            <RadioButton
+                android:id="@+id/rbf15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="GUI"/>
+
+            <RadioButton
+                android:id="@+id/rbf16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Frame"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/caf4"
+            android:layout_below="@+id/rgf4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <TextView
+            android:id="@+id/qf5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caf4"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Q.5/ A previsualization tool used to outline and organize the sequence of events in a game."
+            android:textColor="#0B0A0A" />
+
+        <RadioGroup
+            android:id="@+id/rgf5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qf5">
+
+            <RadioButton
+                android:id="@+id/rbf17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Storyboard"/>
+
+            <RadioButton
+                android:id="@+id/rbf18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Simulator"/>
+
+            <RadioButton
+                android:id="@+id/rbf19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Multimedia"/>
+
+            <RadioButton
+                android:id="@+id/rbf20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#7A7777"
+                android:text="Frame"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/caf5"
+            android:layout_below="@+id/rgf5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"/>
+
+        <Button
+            android:id="@+id/btnf5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Submit"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FAF6F6"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/caf5"/>
+
+        <TextView
+            android:hint="Score"
+            android:id="@+id/tvf3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#09518A"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#FAF6F6"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnf5" />
+
+    </RelativeLayout>
+</ScrollView>
